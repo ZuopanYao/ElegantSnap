@@ -70,8 +70,8 @@ Pod::Spec.new do |spec|
   #  When using multiple platforms
   spec.ios.deployment_target = "10.0"
   spec.osx.deployment_target = "10.12"
-  spec.watchos.deployment_target = "2.0"
-  spec.tvos.deployment_target = "9.0"
+  #spec.watchos.deployment_target = "2.0"
+  spec.tvos.deployment_target = "10.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -81,6 +81,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { :git => "https://github.com/ZuopanYao/ElegantSnap.git", :tag => "#{spec.version}" }
+  spec.swift_versions = "5.0"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -117,7 +118,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-   spec.framework  = "SnapKit"
+  # spec.framework  = "SnapKit"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
@@ -133,6 +134,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  # spec.dependency "SnapKit", "~> 1.4"
+   spec.dependency "SnapKit"
 
 end
