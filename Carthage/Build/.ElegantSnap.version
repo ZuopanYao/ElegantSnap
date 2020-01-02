@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+    {
+      "name" : "ElegantSnap",
+      "hash" : "b5d327f705938917990c035f1d85884896f33ac01561d64dbe935ea8347e24ed",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.0.1",
+  "iOS" : [
+
+  ]
+}
