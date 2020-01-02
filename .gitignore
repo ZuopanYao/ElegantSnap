@@ -1,4 +1,5 @@
 *.DS_Store
 Thumbs.db
 Pods
-ElegantSnap.xcworkspace
+*.xcworkspace
+*/xcuserdata

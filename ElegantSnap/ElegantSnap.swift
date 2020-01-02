@@ -20,62 +20,69 @@ public typealias ElegantView = UIView
 
 #endif
 
-public enum ElegantConstraint {
+public struct ElegantSnap {
     
-    case top(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case bottom(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case leading( _ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case trailing(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case center(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case centerX(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case centerY(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case width(_ equalTo: ConstraintRelatableTarget? = nil)
-    case height(_ equalTo: ConstraintRelatableTarget? = nil)
-    case edges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case directionalEdges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case size(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    case lastBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+}
+
+extension ElegantSnap {
     
-    @available(iOS 8.0, OSX 10.11, *)
-    case firstBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case leftMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case rightMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case topMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case bottomMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case leadingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case trailingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case centerXWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case centerYWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case margins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case directionalMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
-    
-    @available(iOS 8.0, *)
-    case centerWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+    public enum Constraint {
+        
+        case top(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case bottom(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case leading( _ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case trailing(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case center(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case centerX(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case centerY(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case width(_ equalTo: ConstraintRelatableTarget? = nil)
+        case height(_ equalTo: ConstraintRelatableTarget? = nil)
+        case edges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case directionalEdges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case size(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        case lastBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, OSX 10.11, *)
+        case firstBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case leftMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case rightMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case topMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case bottomMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case leadingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case trailingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case centerXWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case centerYWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case margins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case directionalMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+        
+        @available(iOS 8.0, *)
+        case centerWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
+    }
 }
 
 extension ElegantView {
     
-   public func make(_ constraints: [ElegantConstraint]) {
+    public func make(_ constraints: [ElegantSnap.Constraint]) {
         
         snp.makeConstraints { (make) in
             constraints.forEach { (extendable) in
@@ -160,7 +167,7 @@ extension ElegantView {
         }
     }
     
-    public func addSubview(_ view: ElegantView, _ constraints: [ElegantConstraint]) {
+    public func addSubview(_ view: ElegantView, constraints: [ElegantSnap.Constraint]) {
         
         addSubview(view)
         view.make(constraints)
@@ -178,5 +185,65 @@ extension ConstraintMakerExtendable {
             if let _ = offset { equalToSuperview().offset(offset!)}
             else { equalToSuperview() }
         }
+    }
+}
+
+extension ElegantSnap {
+    
+    public enum Direction {
+        
+        case horizontal
+        case vertical
+    }
+    
+    public typealias Spacing = (lead: ConstraintOffsetTarget, tail: ConstraintOffsetTarget, gap: ConstraintOffsetTarget)
+}
+
+extension Array where Element: ElegantView {
+    
+    public func make(_ constraints: [ElegantSnap.Constraint], spacing: ElegantSnap.Spacing, direction: ElegantSnap.Direction) {
+        
+        for index in 0..<count {
+
+            let aView = self[index]
+            var _constraints: [ElegantSnap.Constraint] = constraints
+            
+            if aView == first! {
+                if direction == .horizontal {
+                    _constraints.append(.leading(nil, spacing.lead))
+                    _constraints.append(.width(self[index+1].snp.width))
+                } else {
+                    _constraints.append(.top(nil, spacing.lead))
+                    _constraints.append(.height(self[index+1].snp.height))
+                }
+            }else if aView == last! {
+                if direction == .horizontal {
+                    _constraints.append(.trailing(nil, spacing.tail))
+                    _constraints.append(.leading(self[index-1].snp.trailing, spacing.gap))
+                } else {
+                    _constraints.append(.bottom(nil, spacing.tail))
+                    _constraints.append(.top(self[index-1].snp.bottom, spacing.gap))
+                }
+            }else {
+                if direction == .horizontal {
+                    _constraints.append(.leading(self[index-1].snp.trailing, spacing.gap))
+                    _constraints.append(.width(self[index+1].snp.width))
+                } else {
+                    _constraints.append(.top(self[index-1].snp.bottom, spacing.gap))
+                    _constraints.append(.height(self[index+1].snp.height))
+                }
+            }
+
+            aView.make(_constraints)
+        }
+    }
+}
+
+extension ElegantView {
+    
+    public func addSubview(_ views: [ElegantView], constraints: [ElegantSnap.Constraint], spacing: ElegantSnap.Spacing, direction: ElegantSnap.Direction) {
+        
+        views.forEach { (aView) in addSubview(aView) }
+        views.make(constraints, spacing: spacing, direction: direction)
     }
 }
