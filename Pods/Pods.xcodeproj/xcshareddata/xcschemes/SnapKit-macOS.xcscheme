@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A5FA89CF65316BE81CC4A26B1820E0F1"
-               BuildableName = "Pods_ElegantSnap.framework"
-               BlueprintName = "Pods-ElegantSnap"
+               BlueprintIdentifier = "44FD3C7BB3E9C481B637D1EA95C99A2B"
+               BuildableName = "SnapKit.framework"
+               BlueprintName = "SnapKit-macOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

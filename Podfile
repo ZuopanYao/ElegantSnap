@@ -1,11 +1,17 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
-target 'ElegantSnap' do
-  # Comment the next line if you don't want to use dynamic frameworks
+target 'ElegantSnap-macOS' do
+  #platform :osx, '10.12'
   use_frameworks!
-
-  # Pods for ElegantSnap
   pod 'SnapKit'
+end
 
+target 'ElegantSnap-iOS' do
+  #platform :ios, '10.0'
+  use_frameworks!
+  pod 'SnapKit'
+end
+
+target 'ElegantSnap-tvOS' do
+  #platform :tvos, '10.0'
+  use_frameworks!
+  pod 'SnapKit'
 end

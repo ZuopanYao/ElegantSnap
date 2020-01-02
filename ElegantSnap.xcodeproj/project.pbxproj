@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1956B90894FFD0DD2D25A7CC /* Pods_ElegantSnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F095756348063836EDFBCE3D /* Pods_ElegantSnap.framework */; };
-		B90C7E8823BCFE9800EB662E /* ElegantSnap.h in Headers */ = {isa = PBXBuildFile; fileRef = B90C7E8623BCFE9800EB662E /* ElegantSnap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B90C7E8F23BCFEBE00EB662E /* ElegantSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C7E8E23BCFEBE00EB662E /* ElegantSnap.swift */; };
+		33F9F02F4EA5B85DC743CC72 /* Pods_ElegantSnap_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB854E993541543D984FCC0 /* Pods_ElegantSnap_iOS.framework */; };
+		7C6DD3BCBB28E754502145AF /* Pods_ElegantSnap_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C4EB8DE5FDB7D7CC832314 /* Pods_ElegantSnap_macOS.framework */; };
+		B90C7F6E23BDCD8300EB662E /* ElegantSnap.h in Headers */ = {isa = PBXBuildFile; fileRef = B90C7F6C23BDCD8300EB662E /* ElegantSnap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B90C7F6F23BDCD8300EB662E /* ElegantSnap.h in Headers */ = {isa = PBXBuildFile; fileRef = B90C7F6C23BDCD8300EB662E /* ElegantSnap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B90C7F7023BDCD8300EB662E /* ElegantSnap.h in Headers */ = {isa = PBXBuildFile; fileRef = B90C7F6C23BDCD8300EB662E /* ElegantSnap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B90C7F7123BDCD8300EB662E /* ElegantSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C7F6D23BDCD8300EB662E /* ElegantSnap.swift */; };
+		B90C7F7223BDCD8300EB662E /* ElegantSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C7F6D23BDCD8300EB662E /* ElegantSnap.swift */; };
+		B90C7F7323BDCD8300EB662E /* ElegantSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C7F6D23BDCD8300EB662E /* ElegantSnap.swift */; };
+		E14FAF5570270EFD978FA930 /* Pods_ElegantSnap_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651EEE76222927B4B82FA962 /* Pods_ElegantSnap_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E24649A29609E0150304B60 /* Pods-ElegantSnap-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantSnap-iOS.release.xcconfig"; path = "Target Support Files/Pods-ElegantSnap-iOS/Pods-ElegantSnap-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		53D0244B9B6390091A5CB5E8 /* Pods-ElegantSnap-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantSnap-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ElegantSnap-iOS/Pods-ElegantSnap-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5C2E7069A6D555F1781A915F /* Pods-ElegantSnap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantSnap.release.xcconfig"; path = "Target Support Files/Pods-ElegantSnap/Pods-ElegantSnap.release.xcconfig"; sourceTree = "<group>"; };
+		5D9A34425B7FA780B8397930 /* Pods-ElegantSnap-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantSnap-macOS.debug.xcconfig"; path = "Target Support Files/Pods-ElegantSnap-macOS/Pods-ElegantSnap-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		651EEE76222927B4B82FA962 /* Pods_ElegantSnap_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantSnap_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB854E993541543D984FCC0 /* Pods_ElegantSnap_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantSnap_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB3B01E89466CFF1BD95BC4 /* Pods-ElegantSnap-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantSnap-macOS.release.xcconfig"; path = "Target Support Files/Pods-ElegantSnap-macOS/Pods-ElegantSnap-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		7B3ECDC80280C9FD64BE2CA4 /* Pods-ElegantSnap-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantSnap-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ElegantSnap-tvOS/Pods-ElegantSnap-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		86C4EB8DE5FDB7D7CC832314 /* Pods_ElegantSnap_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantSnap_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90C7E8323BCFE9800EB662E /* ElegantSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ElegantSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B90C7E8623BCFE9800EB662E /* ElegantSnap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElegantSnap.h; sourceTree = "<group>"; };
 		B90C7E8723BCFE9800EB662E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B90C7E8E23BCFEBE00EB662E /* ElegantSnap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElegantSnap.swift; sourceTree = "<group>"; };
+		B90C7F5623BDCC9000EB662E /* ElegantSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ElegantSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90C7F5923BDCC9000EB662E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90C7F6323BDCD4800EB662E /* ElegantSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ElegantSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90C7F6623BDCD4800EB662E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90C7F6C23BDCD8300EB662E /* ElegantSnap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElegantSnap.h; sourceTree = "<group>"; };
+		B90C7F6D23BDCD8300EB662E /* ElegantSnap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElegantSnap.swift; sourceTree = "<group>"; };
 		D47E3A4A803B0BEFCDE7C426 /* Pods-ElegantSnap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantSnap.debug.xcconfig"; path = "Target Support Files/Pods-ElegantSnap/Pods-ElegantSnap.debug.xcconfig"; sourceTree = "<group>"; };
-		F095756348063836EDFBCE3D /* Pods_ElegantSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53606EF7512DCC203A8C31B /* Pods-ElegantSnap-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantSnap-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ElegantSnap-tvOS/Pods-ElegantSnap-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +45,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1956B90894FFD0DD2D25A7CC /* Pods_ElegantSnap.framework in Frameworks */,
+				7C6DD3BCBB28E754502145AF /* Pods_ElegantSnap_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C7F5323BDCC9000EB662E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F9F02F4EA5B85DC743CC72 /* Pods_ElegantSnap_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C7F6023BDCD4800EB662E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14FAF5570270EFD978FA930 /* Pods_ElegantSnap_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +71,9 @@
 		77CB63B1944968D409774F2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F095756348063836EDFBCE3D /* Pods_ElegantSnap.framework */,
+				6CB854E993541543D984FCC0 /* Pods_ElegantSnap_iOS.framework */,
+				86C4EB8DE5FDB7D7CC832314 /* Pods_ElegantSnap_macOS.framework */,
+				651EEE76222927B4B82FA962 /* Pods_ElegantSnap_tvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -45,7 +81,10 @@
 		B90C7E7923BCFE9700EB662E = {
 			isa = PBXGroup;
 			children = (
-				B90C7E8523BCFE9800EB662E /* ElegantSnap */,
+				B90C7F6B23BDCD8300EB662E /* Source */,
+				B90C7E8523BCFE9800EB662E /* ElegantSnap-macOS */,
+				B90C7F5723BDCC9000EB662E /* ElegantSnap-iOS */,
+				B90C7F6423BDCD4800EB662E /* ElegantSnap-tvOS */,
 				B90C7E8423BCFE9800EB662E /* Products */,
 				EFFF608BBED74D605D34C8E0 /* Pods */,
 				77CB63B1944968D409774F2E /* Frameworks */,
@@ -56,18 +95,43 @@
 			isa = PBXGroup;
 			children = (
 				B90C7E8323BCFE9800EB662E /* ElegantSnap.framework */,
+				B90C7F5623BDCC9000EB662E /* ElegantSnap.framework */,
+				B90C7F6323BDCD4800EB662E /* ElegantSnap.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B90C7E8523BCFE9800EB662E /* ElegantSnap */ = {
+		B90C7E8523BCFE9800EB662E /* ElegantSnap-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				B90C7E8E23BCFEBE00EB662E /* ElegantSnap.swift */,
-				B90C7E8623BCFE9800EB662E /* ElegantSnap.h */,
 				B90C7E8723BCFE9800EB662E /* Info.plist */,
 			);
-			path = ElegantSnap;
+			path = "ElegantSnap-macOS";
+			sourceTree = "<group>";
+		};
+		B90C7F5723BDCC9000EB662E /* ElegantSnap-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B90C7F5923BDCC9000EB662E /* Info.plist */,
+			);
+			path = "ElegantSnap-iOS";
+			sourceTree = "<group>";
+		};
+		B90C7F6423BDCD4800EB662E /* ElegantSnap-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				B90C7F6623BDCD4800EB662E /* Info.plist */,
+			);
+			path = "ElegantSnap-tvOS";
+			sourceTree = "<group>";
+		};
+		B90C7F6B23BDCD8300EB662E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B90C7F6C23BDCD8300EB662E /* ElegantSnap.h */,
+				B90C7F6D23BDCD8300EB662E /* ElegantSnap.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		EFFF608BBED74D605D34C8E0 /* Pods */ = {
@@ -75,6 +139,12 @@
 			children = (
 				D47E3A4A803B0BEFCDE7C426 /* Pods-ElegantSnap.debug.xcconfig */,
 				5C2E7069A6D555F1781A915F /* Pods-ElegantSnap.release.xcconfig */,
+				53D0244B9B6390091A5CB5E8 /* Pods-ElegantSnap-iOS.debug.xcconfig */,
+				3E24649A29609E0150304B60 /* Pods-ElegantSnap-iOS.release.xcconfig */,
+				5D9A34425B7FA780B8397930 /* Pods-ElegantSnap-macOS.debug.xcconfig */,
+				6EB3B01E89466CFF1BD95BC4 /* Pods-ElegantSnap-macOS.release.xcconfig */,
+				7B3ECDC80280C9FD64BE2CA4 /* Pods-ElegantSnap-tvOS.debug.xcconfig */,
+				F53606EF7512DCC203A8C31B /* Pods-ElegantSnap-tvOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -86,16 +156,32 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90C7E8823BCFE9800EB662E /* ElegantSnap.h in Headers */,
+				B90C7F6E23BDCD8300EB662E /* ElegantSnap.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C7F5123BDCC9000EB662E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C7F6F23BDCD8300EB662E /* ElegantSnap.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C7F5E23BDCD4800EB662E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C7F7023BDCD8300EB662E /* ElegantSnap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B90C7E8223BCFE9800EB662E /* ElegantSnap */ = {
+		B90C7E8223BCFE9800EB662E /* ElegantSnap-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B90C7E8B23BCFE9800EB662E /* Build configuration list for PBXNativeTarget "ElegantSnap" */;
+			buildConfigurationList = B90C7E8B23BCFE9800EB662E /* Build configuration list for PBXNativeTarget "ElegantSnap-macOS" */;
 			buildPhases = (
 				72EBC32583291854E759E768 /* [CP] Check Pods Manifest.lock */,
 				B90C7E7E23BCFE9800EB662E /* Headers */,
@@ -107,9 +193,47 @@
 			);
 			dependencies = (
 			);
-			name = ElegantSnap;
+			name = "ElegantSnap-macOS";
 			productName = ElegantSnap;
 			productReference = B90C7E8323BCFE9800EB662E /* ElegantSnap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B90C7F5523BDCC9000EB662E /* ElegantSnap-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B90C7F5D23BDCC9000EB662E /* Build configuration list for PBXNativeTarget "ElegantSnap-iOS" */;
+			buildPhases = (
+				DF3BB3BDA2E63EE1BA08D727 /* [CP] Check Pods Manifest.lock */,
+				B90C7F5123BDCC9000EB662E /* Headers */,
+				B90C7F5223BDCC9000EB662E /* Sources */,
+				B90C7F5323BDCC9000EB662E /* Frameworks */,
+				B90C7F5423BDCC9000EB662E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ElegantSnap-iOS";
+			productName = "ElegantSnap-iOS";
+			productReference = B90C7F5623BDCC9000EB662E /* ElegantSnap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B90C7F6223BDCD4800EB662E /* ElegantSnap-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B90C7F6823BDCD4800EB662E /* Build configuration list for PBXNativeTarget "ElegantSnap-tvOS" */;
+			buildPhases = (
+				A7C7A969B2CA0CB1B0698F31 /* [CP] Check Pods Manifest.lock */,
+				B90C7F5E23BDCD4800EB662E /* Headers */,
+				B90C7F5F23BDCD4800EB662E /* Sources */,
+				B90C7F6023BDCD4800EB662E /* Frameworks */,
+				B90C7F6123BDCD4800EB662E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ElegantSnap-tvOS";
+			productName = "ElegantSnap-tvOS";
+			productReference = B90C7F6323BDCD4800EB662E /* ElegantSnap.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -124,6 +248,12 @@
 					B90C7E8223BCFE9800EB662E = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
+					};
+					B90C7F5523BDCC9000EB662E = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					B90C7F6223BDCD4800EB662E = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -140,13 +270,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B90C7E8223BCFE9800EB662E /* ElegantSnap */,
+				B90C7E8223BCFE9800EB662E /* ElegantSnap-macOS */,
+				B90C7F5523BDCC9000EB662E /* ElegantSnap-iOS */,
+				B90C7F6223BDCD4800EB662E /* ElegantSnap-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B90C7E8123BCFE9800EB662E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C7F5423BDCC9000EB662E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C7F6123BDCD4800EB662E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -171,7 +317,51 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ElegantSnap-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ElegantSnap-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C7A969B2CA0CB1B0698F31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElegantSnap-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3BB3BDA2E63EE1BA08D727 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElegantSnap-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -185,7 +375,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90C7E8F23BCFEBE00EB662E /* ElegantSnap.swift in Sources */,
+				B90C7F7123BDCD8300EB662E /* ElegantSnap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C7F5223BDCC9000EB662E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C7F7223BDCD8300EB662E /* ElegantSnap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C7F5F23BDCD4800EB662E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C7F7323BDCD8300EB662E /* ElegantSnap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,18 +519,18 @@
 		};
 		B90C7E8C23BCFE9800EB662E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D47E3A4A803B0BEFCDE7C426 /* Pods-ElegantSnap.debug.xcconfig */;
+			baseConfigurationReference = 5D9A34425B7FA780B8397930 /* Pods-ElegantSnap-macOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2001020;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3M8YBU8YTC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ElegantSnap/Info.plist;
+				INFOPLIST_FILE = "ElegantSnap-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,7 +539,9 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = top.yaozuopan.top.macOS.ElegantSnap;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = ElegantSnap;
+				PRODUCT_NAME = ElegantSnap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -342,18 +550,18 @@
 		};
 		B90C7E8D23BCFE9800EB662E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C2E7069A6D555F1781A915F /* Pods-ElegantSnap.release.xcconfig */;
+			baseConfigurationReference = 6EB3B01E89466CFF1BD95BC4 /* Pods-ElegantSnap-macOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2001020;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3M8YBU8YTC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ElegantSnap/Info.plist;
+				INFOPLIST_FILE = "ElegantSnap-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -362,9 +570,131 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = top.yaozuopan.top.macOS.ElegantSnap;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = ElegantSnap;
+				PRODUCT_NAME = ElegantSnap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B90C7F5B23BDCC9000EB662E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53D0244B9B6390091A5CB5E8 /* Pods-ElegantSnap-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ElegantSnap-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.yaozuopan.top.iOS.ElegantSnap;
+				PRODUCT_MODULE_NAME = ElegantSnap;
+				PRODUCT_NAME = ElegantSnap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B90C7F5C23BDCC9000EB662E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E24649A29609E0150304B60 /* Pods-ElegantSnap-iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ElegantSnap-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.yaozuopan.top.iOS.ElegantSnap;
+				PRODUCT_MODULE_NAME = ElegantSnap;
+				PRODUCT_NAME = ElegantSnap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B90C7F6923BDCD4800EB662E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B3ECDC80280C9FD64BE2CA4 /* Pods-ElegantSnap-tvOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ElegantSnap-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.yaozuopan.top.iOS.ElegantSnap;
+				PRODUCT_MODULE_NAME = ElegantSnap;
+				PRODUCT_NAME = ElegantSnap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		B90C7F6A23BDCD4800EB662E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53606EF7512DCC203A8C31B /* Pods-ElegantSnap-tvOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ElegantSnap-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.yaozuopan.top.iOS.ElegantSnap;
+				PRODUCT_MODULE_NAME = ElegantSnap;
+				PRODUCT_NAME = ElegantSnap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -380,11 +710,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B90C7E8B23BCFE9800EB662E /* Build configuration list for PBXNativeTarget "ElegantSnap" */ = {
+		B90C7E8B23BCFE9800EB662E /* Build configuration list for PBXNativeTarget "ElegantSnap-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B90C7E8C23BCFE9800EB662E /* Debug */,
 				B90C7E8D23BCFE9800EB662E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B90C7F5D23BDCC9000EB662E /* Build configuration list for PBXNativeTarget "ElegantSnap-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90C7F5B23BDCC9000EB662E /* Debug */,
+				B90C7F5C23BDCC9000EB662E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B90C7F6823BDCD4800EB662E /* Build configuration list for PBXNativeTarget "ElegantSnap-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90C7F6923BDCD4800EB662E /* Debug */,
+				B90C7F6A23BDCD4800EB662E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

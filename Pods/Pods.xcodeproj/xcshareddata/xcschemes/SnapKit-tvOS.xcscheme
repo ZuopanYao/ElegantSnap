@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B90C7E8223BCFE9800EB662E"
-               BuildableName = "ElegantSnap.framework"
-               BlueprintName = "ElegantSnap"
-               ReferencedContainer = "container:ElegantSnap.xcodeproj">
+               BlueprintIdentifier = "F7BA90E7114E61152AA5A0D21F1A14F0"
+               BuildableName = "SnapKit.framework"
+               BlueprintName = "SnapKit-tvOS"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,7 +31,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -47,15 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B90C7E8223BCFE9800EB662E"
-            BuildableName = "ElegantSnap.framework"
-            BlueprintName = "ElegantSnap"
-            ReferencedContainer = "container:ElegantSnap.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
