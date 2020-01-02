@@ -12,7 +12,7 @@ ElegantSnap(Base on SnapKit) to make Auto Layout easy and elegant on both iOS an
 ## Requirements / 使用条件
 
 - iOS 10.0+ / Mac OS X 10.12+ / tvOS 10.0+
-- Xcode 9.0+
+- Xcode 10.2+
 - Swift 5.0+
 
 
