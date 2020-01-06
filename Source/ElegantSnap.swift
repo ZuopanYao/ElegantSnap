@@ -24,9 +24,9 @@ public struct ElegantSnap {
     
 }
 
-extension ElegantSnap {
+public extension ElegantSnap {
     
-    public enum Constraint {
+    enum Constraint {
         
         case top(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
         case bottom(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
@@ -80,94 +80,119 @@ extension ElegantSnap {
     }
 }
 
-extension ElegantView {
+public extension ElegantView {
     
-    public func make(_ constraints: [ElegantSnap.Constraint]) {
+    private func convert(make: ConstraintMaker, constraints: [ElegantSnap.Constraint]) {
         
-        snp.makeConstraints { (make) in
-            constraints.forEach { (extendable) in
-                switch extendable {
-                    
-                case .top(let equalTo, let offset):
-                    make.top.equal(equalTo, offset)
-                    
-                case .bottom(let equalTo, let offset):
-                    make.bottom.equal(equalTo, offset)
-                    
-                case .leading(let equalTo, let offset):
-                    make.leading.equal(equalTo, offset)
-                    
-                case .trailing(let equalTo, let offset):
-                    make.trailing.equal(equalTo, offset)
-                    
-                case .center(let equalTo, let offset):
-                    make.center.equal(equalTo, offset)
-                    
-                case .centerX(let equalTo, let offset):
-                    make.centerX.equal(equalTo, offset)
-                    
-                case .centerY(let equalTo, let offset):
-                    make.centerY.equal(equalTo, offset)
-                    
-                case .width(let equalTo):
-                    make.width.equal(equalTo)
-                    
-                case .height(let equalTo):
-                    make.height.equal(equalTo)
-                    
-                case .lastBaseline(let equalTo, let offset):
-                    make.lastBaseline.equal(equalTo, offset)
-                    
-                case .firstBaseline(let equalTo, let offset):
-                    make.firstBaseline.equal(equalTo, offset)
-                    
-                case .leftMargin(let equalTo, let offset):
-                    make.leftMargin.equal(equalTo, offset)
-                    
-                case .rightMargin(let equalTo, let offset):
-                    make.rightMargin.equal(equalTo, offset)
-                    
-                case .topMargin(let equalTo, let offset):
-                    make.topMargin.equal(equalTo, offset)
-                    
-                case .bottomMargin(let equalTo, let offset):
-                    make.bottomMargin.equal(equalTo, offset)
-                    
-                case .leadingMargin(let equalTo, let offset):
-                    make.leadingMargin.equal(equalTo, offset)
-                    
-                case .trailingMargin(let equalTo, let offset):
-                    make.trailingMargin.equal(equalTo, offset)
-                    
-                case .centerXWithinMargins(let equalTo, let offset):
-                    make.centerXWithinMargins.equal(equalTo, offset)
-                    
-                case .centerYWithinMargins(let equalTo, let offset):
-                    make.centerYWithinMargins.equal(equalTo, offset)
-                    
-                case .edges(let equalTo, let offset):
-                    make.edges.equal(equalTo, offset)
-                    
-                case .directionalEdges(let equalTo, let offset):
-                    make.directionalEdges.equal(equalTo, offset)
-                    
-                case .size(let equalTo, let offset):
-                    make.size.equal(equalTo, offset)
-                    
-                case .margins(let equalTo, let offset):
-                    make.margins.equal(equalTo, offset)
-                    
-                case .directionalMargins(let equalTo, let offset):
-                    make.directionalMargins.equal(equalTo, offset)
-                    
-                case .centerWithinMargins(let equalTo, let offset):
-                    make.centerWithinMargins.equal(equalTo, offset)
-                }
+        constraints.forEach { (extendable) in
+            switch extendable {
+                
+            case .top(let equalTo, let offset):
+                make.top.equal(equalTo, offset)
+                
+            case .bottom(let equalTo, let offset):
+                make.bottom.equal(equalTo, offset)
+                
+            case .leading(let equalTo, let offset):
+                make.leading.equal(equalTo, offset)
+                
+            case .trailing(let equalTo, let offset):
+                make.trailing.equal(equalTo, offset)
+                
+            case .center(let equalTo, let offset):
+                make.center.equal(equalTo, offset)
+                
+            case .centerX(let equalTo, let offset):
+                make.centerX.equal(equalTo, offset)
+                
+            case .centerY(let equalTo, let offset):
+                make.centerY.equal(equalTo, offset)
+                
+            case .width(let equalTo):
+                make.width.equal(equalTo)
+                
+            case .height(let equalTo):
+                make.height.equal(equalTo)
+                
+            case .lastBaseline(let equalTo, let offset):
+                make.lastBaseline.equal(equalTo, offset)
+                
+            case .firstBaseline(let equalTo, let offset):
+                make.firstBaseline.equal(equalTo, offset)
+                
+            case .leftMargin(let equalTo, let offset):
+                make.leftMargin.equal(equalTo, offset)
+                
+            case .rightMargin(let equalTo, let offset):
+                make.rightMargin.equal(equalTo, offset)
+                
+            case .topMargin(let equalTo, let offset):
+                make.topMargin.equal(equalTo, offset)
+                
+            case .bottomMargin(let equalTo, let offset):
+                make.bottomMargin.equal(equalTo, offset)
+                
+            case .leadingMargin(let equalTo, let offset):
+                make.leadingMargin.equal(equalTo, offset)
+                
+            case .trailingMargin(let equalTo, let offset):
+                make.trailingMargin.equal(equalTo, offset)
+                
+            case .centerXWithinMargins(let equalTo, let offset):
+                make.centerXWithinMargins.equal(equalTo, offset)
+                
+            case .centerYWithinMargins(let equalTo, let offset):
+                make.centerYWithinMargins.equal(equalTo, offset)
+                
+            case .edges(let equalTo, let offset):
+                make.edges.equal(equalTo, offset)
+                
+            case .directionalEdges(let equalTo, let offset):
+                make.directionalEdges.equal(equalTo, offset)
+                
+            case .size(let equalTo, let offset):
+                make.size.equal(equalTo, offset)
+                
+            case .margins(let equalTo, let offset):
+                make.margins.equal(equalTo, offset)
+                
+            case .directionalMargins(let equalTo, let offset):
+                make.directionalMargins.equal(equalTo, offset)
+                
+            case .centerWithinMargins(let equalTo, let offset):
+                make.centerWithinMargins.equal(equalTo, offset)
             }
         }
     }
     
-    public func addSubview(_ view: ElegantView, constraints: [ElegantSnap.Constraint]) {
+    func make(_ constraints: [ElegantSnap.Constraint]) {
+        
+        snp.makeConstraints { (make) in
+            convert(make: make, constraints:constraints)
+        }
+    }
+    
+    func remake(_ constraints: [ElegantSnap.Constraint]) {
+        
+        snp.remakeConstraints { (make) in
+            convert(make: make, constraints: constraints)
+        }
+    }
+    
+    func update(_ constraints: [ElegantSnap.Constraint]) {
+        
+        snp.updateConstraints { (make) in
+            convert(make: make, constraints: constraints)
+        }
+    }
+    
+    /// remove Constraints
+    func remove() {
+        
+        snp.removeConstraints()
+    }
+    
+    func addSubview(_ view: ElegantView, constraints: [ElegantSnap.Constraint]) {
         
         addSubview(view)
         view.make(constraints)
@@ -188,23 +213,23 @@ extension ConstraintMakerExtendable {
     }
 }
 
-extension ElegantSnap {
+public extension ElegantSnap {
     
-    public enum Direction {
+    enum Direction {
         
         case horizontal
         case vertical
     }
     
-    public typealias Spacing = (lead: ConstraintOffsetTarget, tail: ConstraintOffsetTarget, gap: ConstraintOffsetTarget)
+    typealias Spacing = (lead: ConstraintOffsetTarget, tail: ConstraintOffsetTarget, gap: ConstraintOffsetTarget)
 }
 
-extension Array where Element: ElegantView {
+public extension Array where Element: ElegantView {
     
-    public func make(_ constraints: [ElegantSnap.Constraint], spacing: ElegantSnap.Spacing, direction: ElegantSnap.Direction) {
+    func make(_ constraints: [ElegantSnap.Constraint], spacing: ElegantSnap.Spacing, direction: ElegantSnap.Direction) {
         
         for index in 0..<count {
-
+            
             let aView = self[index]
             var _constraints: [ElegantSnap.Constraint] = constraints
             
@@ -233,15 +258,15 @@ extension Array where Element: ElegantView {
                     _constraints.append(.height(self[index+1].snp.height))
                 }
             }
-
+            
             aView.make(_constraints)
         }
     }
 }
 
-extension ElegantView {
+public extension ElegantView {
     
-    public func addSubview(_ views: [ElegantView], constraints: [ElegantSnap.Constraint], spacing: ElegantSnap.Spacing, direction: ElegantSnap.Direction) {
+    func addSubview(_ views: [ElegantView], constraints: [ElegantSnap.Constraint], spacing: ElegantSnap.Spacing, direction: ElegantSnap.Direction) {
         
         views.forEach { (aView) in addSubview(aView) }
         views.make(constraints, spacing: spacing, direction: direction)
