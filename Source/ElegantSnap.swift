@@ -9,20 +9,14 @@
 import SnapKit
 
 #if os(macOS)
-
 import Cocoa
 public typealias ElegantView = NSView
-
 #else
-
 import UIKit
 public typealias ElegantView = UIView
-
 #endif
 
-public struct ElegantSnap {
-    
-}
+public struct ElegantSnap { }
 
 public extension ElegantSnap {
     
@@ -166,21 +160,18 @@ public extension ElegantView {
     }
     
     func make(_ constraints: [ElegantSnap.Constraint]) {
-        
         snp.makeConstraints { (make) in
             convert(make: make, constraints:constraints)
         }
     }
     
     func remake(_ constraints: [ElegantSnap.Constraint]) {
-        
         snp.remakeConstraints { (make) in
             convert(make: make, constraints: constraints)
         }
     }
     
     func update(_ constraints: [ElegantSnap.Constraint]) {
-        
         snp.updateConstraints { (make) in
             convert(make: make, constraints: constraints)
         }
@@ -188,12 +179,10 @@ public extension ElegantView {
     
     /// remove Constraints
     func remove() {
-        
         snp.removeConstraints()
     }
     
     func addSubview(_ view: ElegantView, constraints: [ElegantSnap.Constraint]) {
-        
         addSubview(view)
         view.make(constraints)
     }
@@ -216,7 +205,6 @@ extension ConstraintMakerExtendable {
 public extension ElegantSnap {
     
     enum Direction {
-        
         case horizontal
         case vertical
     }
@@ -267,7 +255,6 @@ public extension Array where Element: ElegantView {
 public extension ElegantView {
     
     func addSubview(_ views: [ElegantView], constraints: [ElegantSnap.Constraint], spacing: ElegantSnap.Spacing, direction: ElegantSnap.Direction) {
-        
         views.forEach { (aView) in addSubview(aView) }
         views.make(constraints, spacing: spacing, direction: direction)
     }
