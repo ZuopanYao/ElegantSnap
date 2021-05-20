@@ -15,3 +15,9 @@ target 'ElegantSnap-tvOS' do
   use_frameworks!
   pod 'SnapKit'
 end
+
+target 'Example-iOS' do
+  #platform :ios, '10.0'
+  use_frameworks!
+  pod 'SnapKit'
+end

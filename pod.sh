@@ -24,8 +24,8 @@ git tag -a $1 -m "$1"
 git push origin : $1
 
 # cocoapods 索引更新
-cd ../$SPECS
-git pull
+#cd ../$SPECS
+#git pull
 
 mkdir -p $MODULE/$1
 cp ../$MODULE/$MODULE.podspec $MODULE/$1/$MODULE.podspec
@@ -36,5 +36,5 @@ git push
 echo 'Done'
 
 # cocoapods specs
-pod trunk push "../$MODULE/$MODULE.podspec"
+pod trunk push "../$MODULE/$MODULE.podspec" --allow-warnings
 
