@@ -16,7 +16,10 @@ import UIKit
 public typealias ElegantView = UIView
 #endif
 
-public struct ElegantSnap { }
+public class ElegantSnap {
+    
+    var constraints: [Constraint] = []
+}
 
 public extension ElegantSnap {
     
@@ -72,6 +75,149 @@ public extension ElegantSnap {
         @available(iOS 8.0, *)
         case centerWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil)
     }
+}
+
+// MARK: - For Chain Call
+extension ElegantSnap {
+    
+    public func top(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.top(equalTo, offset))
+        return self
+    }
+    
+    public func bottom(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.bottom(equalTo, offset))
+        return self
+    }
+    
+    public func leading( _ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.leading(equalTo, offset))
+        return self
+    }
+    
+    public func trailing(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.trailing(equalTo, offset))
+        return self
+    }
+    
+    public func center(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.center(equalTo, offset))
+        return self
+    }
+    
+    public func centerX(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.centerX(equalTo, offset))
+        return self
+    }
+    
+    public func centerY(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.centerY(equalTo, offset))
+        return self
+    }
+    
+    public func width(_ equalTo: ConstraintRelatableTarget? = nil) -> Self {
+        constraints.append(.width(equalTo))
+        return self
+    }
+    
+    public func height(_ equalTo: ConstraintRelatableTarget? = nil) -> Self {
+        constraints.append(.height(equalTo))
+        return self
+    }
+    
+    public func edges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.edges(equalTo, offset))
+        return self
+    }
+    
+    public func directionalEdges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.directionalEdges(equalTo, offset))
+        return self
+    }
+    
+    public func size(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.size(equalTo, offset))
+        return self
+    }
+    
+    public func lastBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.lastBaseline(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, OSX 10.11, *)
+    public func firstBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.firstBaseline(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func leftMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.leftMargin(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func rightMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.rightMargin(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func topMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.topMargin(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func bottomMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.bottomMargin(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func leadingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.leadingMargin(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func trailingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.trailingMargin(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func centerXWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.centerXWithinMargins(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func centerYWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.centerYWithinMargins(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func margins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.margins(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func directionalMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.directionalMargins(equalTo, offset))
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public func centerWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+        constraints.append(.centerWithinMargins(equalTo, offset))
+        return self
+    }
+    
+    public func end() { }
 }
 
 public extension ElegantView {
@@ -160,21 +306,15 @@ public extension ElegantView {
     }
     
     func make(_ constraints: [ElegantSnap.Constraint]) {
-        snp.makeConstraints { (make) in
-            convert(make: make, constraints:constraints)
-        }
+        snp.makeConstraints { convert(make: $0, constraints: constraints) }
     }
     
     func remake(_ constraints: [ElegantSnap.Constraint]) {
-        snp.remakeConstraints { (make) in
-            convert(make: make, constraints: constraints)
-        }
+        snp.remakeConstraints { convert(make: $0, constraints: constraints) }
     }
     
     func update(_ constraints: [ElegantSnap.Constraint]) {
-        snp.updateConstraints { (make) in
-            convert(make: make, constraints: constraints)
-        }
+        snp.updateConstraints { convert(make: $0, constraints: constraints) }
     }
     
     /// remove Constraints
@@ -257,5 +397,36 @@ public extension ElegantView {
     func addSubview(_ views: [ElegantView], constraints: [ElegantSnap.Constraint], spacing: ElegantSnap.Spacing, direction: ElegantSnap.Direction) {
         views.forEach { (aView) in addSubview(aView) }
         views.make(constraints, spacing: spacing, direction: direction)
+    }
+}
+
+// MARK: - For Chain Call
+public extension ElegantView {
+    
+    /// Chain Call
+    func make(_ constraintClosure: (ElegantSnap) -> Void) {
+        let snap: ElegantSnap = .init()
+        constraintClosure(snap)
+        make(snap.constraints)
+    }
+    
+    /// Chain Call
+    func remake(_ constraintClosure: (ElegantSnap) -> Void) {
+        let snap: ElegantSnap = .init()
+        constraintClosure(snap)
+        remake(snap.constraints)
+    }
+    
+    /// Chain Call
+    func update(_ constraintClosure: (ElegantSnap) -> Void) {
+        let snap: ElegantSnap = .init()
+        constraintClosure(snap)
+        update(snap.constraints)
+    }
+    
+    /// Chain Call
+    func addSubview(_ view: ElegantView, constraintClosure: (ElegantSnap) -> Void) {
+        addSubview(view)
+        view.make(constraintClosure)
     }
 }
