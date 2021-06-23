@@ -1,6 +1,6 @@
 # ElegantSnap
 
-基于SnapKit, 用法简洁优雅,可运行在iOS、tvOS、macOS上自动布局库
+基于SnapKit, 用法简洁优雅,可运行在iOS、tvOS、macOS上自动布局库，支持链式调用
 
 ElegantSnap(Base on SnapKit) to make Auto Layout easy and elegant on both iOS and OS X.
 
@@ -69,8 +69,16 @@ class ViewController: NSViewController {
         let aView = NSView()
         view.addSubview(aView, constraints: [.top(), .leading(), .width(200), .height(400)])
         
+        // OR Chian 链式使用
+        // v1.5.0+
+        // view.addSubview(aView) { $0.top().leading().width(200).height(400).end() }
+        
         // view.addSubview(aView)
         // aView.make([.top(), .leading(), .width(200), .height(400)])
+         
+        // OR Chian 链式使用
+        // v1.5.0+
+         view.make { $0.top().leading().width(200).height(400).end() }
     }
 }
 ```
@@ -111,8 +119,16 @@ class ViewController: NSViewController {
         let aView = NSView()
         view.addSubview(aView, constraints: [.top(), .leading(), .width(200), .height(400)])
         
+        // OR Chian 链式使用
+        // v1.5.0+
+        // view.addSubview(aView) { $0.top().leading().width(200).height(400).end() }
+        
         let myView = NSView()
         view.addSubview(myView, constraints: [.top(aView.snp.bottom, 20), .leading(), .width(300), .height(aView.snp.height)])
+        
+        // OR Chian 链式使用
+        // v1.5.0+
+        // view.addSubview(myView) { $0.top(aView.snp.bottom, 20).leading().width(300).height(aView.snp.height).end() }
     }
     
 }
