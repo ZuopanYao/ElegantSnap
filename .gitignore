@@ -3,3 +3,5 @@ Thumbs.db
 */xcuserdata
 /Carthage
 /build
+/Pods
+Podfile.lock
