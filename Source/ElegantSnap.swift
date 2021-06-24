@@ -78,146 +78,154 @@ public extension ElegantSnap {
 }
 
 // MARK: - For Chain Call
-extension ElegantSnap {
+public extension ElegantSnap {
+
+    /// All(top、bottom、leading and trailing) equal to superview
+    func equalToSuperview() {
+        constraints.append(.top())
+        constraints.append(.bottom())
+        constraints.append(.leading())
+        constraints.append(.trailing())
+    }
     
-    public func top(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func top(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.top(equalTo, offset))
         return self
     }
     
-    public func bottom(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func bottom(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.bottom(equalTo, offset))
         return self
     }
     
-    public func leading( _ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func leading( _ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.leading(equalTo, offset))
         return self
     }
     
-    public func trailing(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func trailing(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.trailing(equalTo, offset))
         return self
     }
     
-    public func center(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func center(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.center(equalTo, offset))
         return self
     }
     
-    public func centerX(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func centerX(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.centerX(equalTo, offset))
         return self
     }
     
-    public func centerY(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func centerY(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.centerY(equalTo, offset))
         return self
     }
     
-    public func width(_ equalTo: ConstraintRelatableTarget? = nil) -> Self {
+    func width(_ equalTo: ConstraintRelatableTarget? = nil) -> Self {
         constraints.append(.width(equalTo))
         return self
     }
     
-    public func height(_ equalTo: ConstraintRelatableTarget? = nil) -> Self {
+    func height(_ equalTo: ConstraintRelatableTarget? = nil) -> Self {
         constraints.append(.height(equalTo))
         return self
     }
     
-    public func edges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func edges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.edges(equalTo, offset))
         return self
     }
     
-    public func directionalEdges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func directionalEdges(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.directionalEdges(equalTo, offset))
         return self
     }
     
-    public func size(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func size(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.size(equalTo, offset))
         return self
     }
     
-    public func lastBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func lastBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.lastBaseline(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, OSX 10.11, *)
-    public func firstBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func firstBaseline(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.firstBaseline(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func leftMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func leftMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.leftMargin(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func rightMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func rightMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.rightMargin(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func topMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func topMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.topMargin(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func bottomMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func bottomMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.bottomMargin(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func leadingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func leadingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.leadingMargin(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func trailingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func trailingMargin(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.trailingMargin(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func centerXWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func centerXWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.centerXWithinMargins(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func centerYWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func centerYWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.centerYWithinMargins(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func margins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func margins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.margins(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func directionalMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func directionalMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.directionalMargins(equalTo, offset))
         return self
     }
     
     @available(iOS 8.0, *)
-    public func centerWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
+    func centerWithinMargins(_ equalTo: ConstraintRelatableTarget? = nil, _ offset: ConstraintOffsetTarget? = nil) -> Self {
         constraints.append(.centerWithinMargins(equalTo, offset))
         return self
     }
     
-    public func end() { }
+    func end() { }
 }
 
 public extension ElegantView {
