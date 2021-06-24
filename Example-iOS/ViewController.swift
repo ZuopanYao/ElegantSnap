@@ -21,8 +21,9 @@ class ViewController: UIViewController {
 //        view.addSubview(v) {
 //            $0.top(200).leading(100).width(100).height(200).end()
 //        }
+        
 //
-        view.make { $0.bottom().top().width().height().end() }
+        view.make { $0.equalToSuperview() }
         view.addSubview(v, constraints: [.top(200), .leading(100), .height(200), .width(100)])
     }
 }
